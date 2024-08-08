@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sign up</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            background-image: url(signupimg.jpg);
+            background-repeat: no-repet;
+            background-size: max(1200px,100vw);
+            height: 600px;
+            width: 1200px;
+           position: absolute; 
+}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 400px;
+            height: 410px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 30px;
+            padding-left: 16px;
+            margin-left: 400px;
+            margin-top: 100px;
+            box-shadow: 0px 0px 30px;
+            opacity: 0.9;
+        }
+        input[type=text], input[type=password] {
+            width: 69%;
+            padding: 15px;
+            margin: 5px 0 20px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        .button {
+            background-color: rgb(210, 26, 197);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 90px;
+            border: none;
+            cursor: pointer;
+            width: 30%;
+            border-radius: 120px;
+        }
+        table td{
+            padding-left: 50px;
+        }
+        .but{
+            background-color: #f1f1f1;
+            border-radius: 60px;
+        
+        }
+        button:hover{
+            background-color: aqua;
+            color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <form class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <lable for="psw"><b>confirm </b></lable>
+        <input type="password" placeholder="confirm password" name="psw" required>
+        <div>
+            <button type="button" onclick="redirectToNextPage()" class="button">Sign Up</button>
+        <h3 style="font-weight: bolder;" text>or</h3>
+           <Button class="but"><img src="google.jpg" width="7%"></BUtton>
+        <button class="but"><img src="facebook.jpg" width="7%"></button><br><br>
+     <p>Already exist an account ? <a href="login.html" style="text-decoration: none;">Login</a></p>
+        </div>
+    </form>
+    <script>
+        function redirectToNextPage() {
+            window.location.href = "home.html";
+        }
+    </script>
+    </div>
+</body>
+</html>

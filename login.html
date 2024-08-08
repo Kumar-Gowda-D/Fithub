@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+    <style>
+        .pic {
+            background-image: url(login.jpg);
+            background-repeat: no-repet;
+            background-size: 100%;
+            height: 650px;
+            position: relative;
+            margin: 0;
+    
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 400px;
+            padding: 16px;
+            background-color: white;
+           margin-left: 380px;
+           margin-top: 150px;
+            border: 1px solid black;
+            border-radius: 30px;
+            box-shadow: 0px 0px 30px;
+            position: absolute;
+            opacity: 0.8;
+        
+        }
+        input[type=text],
+        input[type=password] {
+            width: 69%;
+            padding: 15px;
+            margin: 5px 0 20px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        button {
+            background-color: rgb(210, 26, 197);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 90px;
+            border: none;
+            cursor: pointer;
+            width: 30%;
+            opacity: 0.9;
+            border-radius: 120px;
+        }
+    
+        button:hover{
+            background-color: aqua;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="pic">
+    <form class="container" > 
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required><br>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+       
+        <button type="button" onclick="redirectToNextPage()">Login</button>
+        <a href="#" style="text-decoration: none;"><pre>                                      
+                                    Forgot password...?</pre></a>
+       
+    </form>
+    <script>
+        function redirectToNextPage() {
+    
+            window.location.href = "home.html";
+        }
+    </script>
+    </div>
+</body>
+</html>
